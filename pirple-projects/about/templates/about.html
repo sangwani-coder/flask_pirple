@@ -1,0 +1,19 @@
+{% extends 'structure.html'%}
+
+{% block main%}
+<div class="card">
+  <img class="circle" src="static/img/pz.jpg" alt="Sangwani" style="width:200px">
+  <h1>Sangwani P. Zyambo</h1>
+  <p class="title">Founder & CEO</p>
+  <p>Company: Kitwe Coding Academy</p>
+  <p>Nationality: Zambian</p>
+  <a href="#"><i class="fa fa-dribbble"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <p><button><a href={{url_for('contact')}}>Contact</a></button></p>
+  <p> click <a href={{url_for('index')}}>here</a> to return to the home page</p>
+</div>
+
+
+{% endblock main%}

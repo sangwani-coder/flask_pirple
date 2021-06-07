@@ -1,0 +1,32 @@
+<!Doctype html>
+
+<html>
+<title> About me webpage</title>
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='static/css/style.css'>
+</head>
+<body>
+<h1>Welcome To my website</h1>
+
+<div class="topnav">
+    <ul>
+        <li><a class="active" href= {{url_for('index')}}>Home</li>
+		<li><a href={{url_for('dashboard')}} > Dashboard</a></li>
+		<li><a href={{url_for('privacy')}} > Privacy</a></li>
+		<li><a href={{url_for('terms')}} > Terms of use</a></li>
+        <li><a href= {{url_for('about')}} >About</a></li>
+        <li><a href={{url_for('contact')}} > Contact</a></li>
+    </ul>
+</div>
+
+{% block main %}
+<h1>Home page</h1>
+<p> click <a href={{url_for('about')}}>here</a> about.</p>
+
+
+{% endblock main%}
+
+</body>
+
+</html>

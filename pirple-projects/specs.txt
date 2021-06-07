@@ -1,0 +1,9 @@
+#PAGES:
+ homepage, dashboard, about, privacy, terms of use, contacts
+#ROUTES - 
+	/home
+	/dashboard
+	/terms of use
+	/privacy
+	/about
+	/contact
